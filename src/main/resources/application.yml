@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        healthCheckPath: /pp/health
+        healthCheckInterval: 15s
+        instance-id: miya
+  application:
+    name: miya
+server:
+  port: 8502
